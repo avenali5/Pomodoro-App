@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=Chivo:wght@300;400;700;900&family=Cormorant:wght@300;400;500;600;700&family=Gaegu:wght@300;400;700&display=swap");
+
+$mainBkn: #252525;
+$secondBkn: #343434;
+$fontColor: #fafafa;
+$secondFontColor: rgba(#fafafa, 0.4);
+$squareBkn: #282828;
+$boxShadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+$back: -10;
+$normal: 1;
+$tooltip: 10;
+$fixed: 100;
+$modal: 1000;
+
+$red: #ff7777;
+$blue: #68c8dd;
+$green: #7abb84;
+
+.red {
+  --cta_color: #{$red} !important;
+}
+.blue {
+  --cta_color: #{$blue} !important;
+}
+.green {
+  --cta_color: #{$green} !important;
+}
+
+$chivo: "Chivo";
+$bai: "Bai Jamjuree";
+$gaegu: "Gaegu";
+$cormorant: "Cormorant";
+
+#chivo {
+  --font_family: #{$chivo};
+}
+#bai {
+  --font_family: #{$bai};
+}
+#gaegu {
+  --font_family: #{$gaegu};
+}
+#cormorant {
+  --font_family: #{$cormorant};
+}

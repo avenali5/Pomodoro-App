@@ -1,0 +1,140 @@
+@import "./variables.scss";
+.whole-header-container {
+  background: $secondBkn;
+  width: 100%;
+  box-shadow: $boxShadow;
+  .header-container {
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    .logo {
+      img {
+        width: 2rem;
+      }
+    }
+    .settings {
+      cursor: pointer;
+      svg {
+        path {
+          stroke: var(--cta_color);
+        }
+      }
+    }
+  }
+}
+
+.whole-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: $modal;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s all;
+
+  .menu-container {
+    height: 100%;
+    padding: 2rem;
+    background: $secondBkn;
+    position: absolute;
+    width: 80%;
+    max-width: 25rem;
+    transition: 0.3s ease-out all;
+    transform: translateX(100%);
+    .top {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      .title {
+        font-size: 1.4rem;
+        color: $fontColor;
+        font-weight: 600;
+      }
+      svg {
+        cursor: pointer;
+        path {
+          stroke: var(--cta_color);
+        }
+      }
+    }
+    .options {
+      .option {
+        margin-bottom: 3rem;
+        .title {
+          font-size: 1.2rem;
+          color: $fontColor;
+        }
+        hr {
+          border-color: var(--cta_color);
+          opacity: 0.4;
+          margin: 0.4rem 0 0.8rem;
+        }
+      }
+      .color {
+        ul {
+          div {
+            border-radius: 0.4rem;
+            height: 1.4rem;
+            width: 1.4rem;
+            position: relative;
+            margin-right: 1rem;
+            cursor: pointer;
+          }
+          div:nth-child(1) {
+            background: #ff7777;
+          }
+          div:nth-child(2) {
+            background: #68c8dd;
+          }
+          div:nth-child(3) {
+            background: #7abb84;
+          }
+          .colorSelected {
+            border: 3px solid white;
+          }
+        }
+      }
+      .font {
+        ul {
+          li {
+            color: $secondFontColor;
+            margin-bottom: 0.4rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 300;
+          }
+          .selected {
+            color: var(--cta_color);
+            font-weight: 500;
+          }
+          .chivo {
+            font-family: "Chivo";
+          }
+          .bai {
+            font-family: "Bai Jamjuree";
+          }
+          .gaegu {
+            font-family: "Gaegu";
+          }
+          .cormorant {
+            font-family: "Cormorant";
+          }
+          .fontSelected {
+            color: $fontColor;
+          }
+        }
+      }
+    }
+  }
+}
+.openMenu {
+  opacity: 1;
+  pointer-events: all;
+}
+.openMenuModal {
+  transform: translateX(0) !important;
+}
