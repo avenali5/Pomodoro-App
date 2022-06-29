@@ -35,7 +35,6 @@ const Clock = (props) => {
     let audioTag = document.querySelector(".alarm");
     audioTag.play();
     audioTag.volume = 0.5;
-    document.title = "Pomodoro App | Time is up!";
   };
 
   const audioEnded = () => {
@@ -44,7 +43,7 @@ const Clock = (props) => {
   };
 
   return (
-    <section className="clock-container relative">
+    <section className='clock-container relative'>
       <CountdownCircleTimer
         key={key}
         {...timerProps}
@@ -62,9 +61,8 @@ const Clock = (props) => {
               </span>
             )}
 
-            <audio onEnded={audioEnded} className="alarm">
-              <source src={alarm} type="audio/mp3" />
-              {(document.title = `Pomodoro App | ${remainingTime} `)}
+            <audio onEnded={audioEnded} className='alarm'>
+              <source src={alarm} type='audio/mp3' />
             </audio>
             <br />
           </span>

@@ -8,7 +8,7 @@ const AddTask = () => {
     setTasks([
       ...tasks,
       {
-        text: "Type a task...",
+        text: "",
         completed: false,
         id: Math.random() * 1000,
       },
@@ -16,35 +16,35 @@ const AddTask = () => {
   };
 
   return (
-    <section className="add-task-container relative">
-      <a className="add-task flex" onClick={addTask}>
+    <section className='add-task-container relative'>
+      <a className='add-task flex' onClick={addTask}>
         <svg
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          width='24'
+          height='25'
+          viewBox='0 0 24 25'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
         >
           <path
-            d="M8 12.2469H16"
-            stroke="white"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            d='M8 12.2469H16'
+            stroke='white'
+            strokeWidth='1.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
           <path
-            d="M12 16.2469V8.24689"
-            stroke="white"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            d='M12 16.2469V8.24689'
+            stroke='white'
+            strokeWidth='1.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
           <path
-            d="M9 22.2469H15C20 22.2469 22 20.2469 22 15.2469V9.24689C22 4.24689 20 2.24689 15 2.24689H9C4 2.24689 2 4.24689 2 9.24689V15.2469C2 20.2469 4 22.2469 9 22.2469Z"
-            stroke="white"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            d='M9 22.2469H15C20 22.2469 22 20.2469 22 15.2469V9.24689C22 4.24689 20 2.24689 15 2.24689H9C4 2.24689 2 4.24689 2 9.24689V15.2469C2 20.2469 4 22.2469 9 22.2469Z'
+            stroke='white'
+            strokeWidth='1.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
         </svg>
         Add Task
